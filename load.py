@@ -6,7 +6,7 @@ def upload():
     username = "ilya"
     password = "Passwd093"
     local_path = "ekraf_posts.csv"
-    remote_path = "uploads/ekraf_posts.csv"  # ← Diubah ke dalam folder uploads
+    remote_path = "uploads/ekraf_posts.csv"  
 
     transport = paramiko.Transport((hostname, 22))
     transport.connect(username=username, password=password)
@@ -14,7 +14,7 @@ def upload():
     sftp.put(local_path, remote_path)
     sftp.close()
     transport.close()
-    print("File sukses diupload ke uploads di SFTP!")
+    print("file berhasil masuk ke stp")
 
 
 if __name__ == "__main__":
