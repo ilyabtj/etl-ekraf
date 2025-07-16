@@ -10,7 +10,7 @@ def extract():
         json.dump(data, f, ensure_ascii=False, indent=2)
 
 
-print("Data berhasil diextract ke raw.json")
+print("data nya berhasil diextract ke raw.json")
 
 if __name__ == "__main__":
     extract()
