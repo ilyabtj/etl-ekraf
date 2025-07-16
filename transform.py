@@ -25,7 +25,7 @@ def transform():
         )
         df = df.drop(columns=["user"])
 
-    # Gabung categories: ambil "title", gabung pake "|"
+    # kita gabung categories: ambil "title", gabung pake "|"
     if "categories" in df.columns:
         df["categories"] = df["categories"].apply(
             lambda x: (
@@ -35,7 +35,7 @@ def transform():
             )
         )
 
-    # Gabung tags: ambil "name", gabung pake "|"
+    # gabung tags: ambil "name", gabung pake "|"
     if "tags" in df.columns:
         df["tags"] = df["tags"].apply(
             lambda x: (
